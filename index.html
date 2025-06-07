@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ozone Life — Ozonator</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f6fef9; color: #222; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    header img { height: 40px; }
+    nav a { margin-left: 12px; text-decoration: none; font-weight: bold; color: #2b7d2b; }
+    .hero { padding: 60px 20px; background: linear-gradient(to right, #e8fdf1, #d9f8f0); text-align: center; }
+    .hero h1 { font-size: 2.5rem; color: #2b7d2b; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .features, .description { padding: 40px 20px; max-width: 960px; margin: auto; }
+    .features h2, .description h2 { color: #2b7d2b; text-align: center; }
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
+    .card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px; flex: 1 1 250px; text-align: center; }
+    .card img { width: 60px; margin-bottom: 10px; }
+    footer { background: #2b7d2b; color: white; text-align: center; padding: 20px; font-size: 0.9rem; }
+    .lang-btn { margin-left: 12px; cursor: pointer; color: #2b7d2b; }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    .product-img { width: 100%; max-width: 400px; margin: 20px auto; display: block; }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <img src="ozone_life_logo_clean.png" alt="Ozone Life" />
+  <nav>
+    <span class="lang-btn" onclick="switchLang('en')">EN</span>
+    <span class="lang-btn" onclick="switchLang('ru')">RU</span>
+  </nav>
+</header>
+
+<section class="hero lang lang-en active">
+  <h1>Ozone Generator for Home and Kitchen</h1>
+  <p>Purify your food, water and air in 30 minutes — safely and effectively</p>
+  <p><strong>Price: $390</strong></p>
+</section>
+
+<section class="hero lang lang-ru">
+  <h1>Озонатор для дома и кухни</h1>
+  <p>Очищает продукты, воду и воздух за 30 минут — безопасно и эффективно</p>
+  <p><strong>Цена: $390</strong></p>
+</section>
+
+<img class="product-img" src="ozonator.png" alt="Ozonator"/>
+
+<section class="features lang lang-en active">
+  <h2>Benefits</h2>
+  <div class="cards">
+    <div class="card"><img src="icon1.png"/><strong>Effective purification</strong><br>Eliminates bacteria, viruses and odors</div>
+    <div class="card"><img src="icon2.png"/><strong>Adjustable timer</strong><br>Control the time with digital interface</div>
+    <div class="card"><img src="icon3.png"/><strong>Multifunctional</strong><br>Use with food, water and containers</div>
+  </div>
+</section>
+
+<section class="features lang lang-ru">
+  <h2>Преимущества</h2>
+  <div class="cards">
+    <div class="card"><img src="icon1.png"/><strong>Эффективная очистка</strong><br>Удаляет бактерии, вирусы и запахи</div>
+    <div class="card"><img src="icon2.png"/><strong>Регулируемый таймер</strong><br>Цифровое управление временем</div>
+    <div class="card"><img src="icon3.png"/><strong>Многофункциональность</strong><br>Подходит для продуктов, воды и бутылочек</div>
+  </div>
+</section>
+
+<section class="description lang lang-en active">
+  <h2>How it Works</h2>
+  <p>Ozone [O₃] breaks down microbes and toxins at the molecular level. After the cycle, it turns into clean oxygen [O₂]. It's safe, natural, and leaves no residue.</p>
+  <p>Contact: <strong>info@ozonelife.com</strong></p>
+</section>
+
+<section class="description lang lang-ru">
+  <h2>Как это работает</h2>
+  <p>Озон [O₃] разрушает микробы и токсины на молекулярном уровне. После обработки превращается в кислород [O₂]. Это безопасно, натурально и не оставляет следов.</p>
+  <p>Контакт: <strong>info@ozonelife.com</strong></p>
+</section>
+
+<footer>
+  © 2025 Ozone Life. All rights reserved.
+</footer>
+
+</body>
+</html>
