@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ozone Life — Home & Office Ozonator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #f9f9f9; color: #222; }
+    header { background: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+    header h1 { margin: 0; font-size: 1.5em; color: #2b7d2b; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; font-weight: bold; }
+    .lang-toggle { font-size: 0.9em; }
+    .hero { padding: 60px 20px; text-align: center; background: #e9f8ed; }
+    .hero h2 { font-size: 2.5em; color: #2b7d2b; }
+    .hero p { font-size: 1.2em; margin-top: 10px; }
+    .btn { display: inline-block; padding: 12px 24px; background: #2b7d2b; color: white; text-decoration: none; margin-top: 20px; border-radius: 4px; }
+    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .features, .specs { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
+    .features div, .specs div { flex: 1 1 45%; background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    footer { text-align: center; padding: 20px; background: #222; color: #aaa; font-size: 0.9em; }
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
+  <script>
+    function toggleLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Ozone Life</h1>
+  <nav class="lang-toggle">
+    <a href="#" onclick="toggleLang('ru')">RU</a> | <a href="#" onclick="toggleLang('en')">EN</a>
+  </nav>
+</header>
+
+<section class="hero lang lang-en active">
+  <h2>Ozonator for Clean & Safe Life</h2>
+  <p>Removes bacteria, viruses, pesticides, and odors in just 30 minutes</p>
+  <p><strong>Price: $390</strong></p>
+  <a class="btn" href="#order">Order Now</a>
+</section>
+
+<section class="hero lang lang-ru">
+  <h2>Озонатор для чистой и безопасной жизни</h2>
+  <p>Удаляет бактерии, вирусы, пестициды и запахи всего за 30 минут</p>
+  <p><strong>Цена: 390$</strong></p>
+  <a class="btn" href="#order">Купить сейчас</a>
+</section>
+
+<section class="section lang lang-en active">
+  <h2>Benefits</h2>
+  <div class="features">
+    <div>✔ Effective disinfection</div>
+    <div>✔ Removes odors and microbes</div>
+    <div>✔ Safe for home and children</div>
+    <div>✔ Fast cycle – 30 minutes</div>
+  </div>
+</section>
+
+<section class="section lang lang-ru">
+  <h2>Преимущества</h2>
+  <div class="features">
+    <div>✔ Эффективная дезинфекция</div>
+    <div>✔ Удаление запахов и микробов</div>
+    <div>✔ Безопасен для дома и детей</div>
+    <div>✔ Быстрый цикл — 30 минут</div>
+  </div>
+</section>
+
+<section class="section lang lang-en active">
+  <h2>Technical Specs</h2>
+  <div class="specs">
+    <div><strong>Power:</strong> 14W</div>
+    <div><strong>Ozone Output:</strong> 600 mg/h</div>
+    <div><strong>Size:</strong> 268×188×70 mm</div>
+    <div><strong>Weight:</strong> 0.9 kg</div>
+  </div>
+</section>
+
+<section class="section lang lang-ru">
+  <h2>Технические характеристики</h2>
+  <div class="specs">
+    <div><strong>Мощность:</strong> 14 Вт</div>
+    <div><strong>Производительность озона:</strong> 600 мг/ч</div>
+    <div><strong>Размер:</strong> 268×188×70 мм</div>
+    <div><strong>Вес:</strong> 0.9 кг</div>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <h2>Contact / Контакты</h2>
+  <p>Email: info@ozonelife.com</p>
+  <p>Telegram: @ozonelife</p>
+</section>
+
+<footer>
+  © 2025 Ozone Life. All rights reserved.
+</footer>
+
+</body>
+</html>
